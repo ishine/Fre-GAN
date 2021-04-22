@@ -21,6 +21,11 @@ Visit our [demo page](http://prml-lab-speech-team.github.io/demo/FreGAN) for aud
   <li>Download and extract the <a href='https://keithito.com/LJ-Speech-Dataset/'>LJSpeech </a> dataset. And move all wave filese to LJSpeech-1.1/wavs
 </ol>
 
+## Preprocess
+<pre>
+<code> python preprocess.py --in_dir='LJSpeech/wavs' --out_dir='LJSpeech/preprocessed'</code>
+</pre>
+
 ## Training
 <pre>
 <code> python train.py --config config_v1.json</code>
@@ -29,9 +34,6 @@ Visit our [demo page](http://prml-lab-speech-team.github.io/demo/FreGAN) for aud
 To train V2 Generator, replace config_v1.json with config_v2.json.
 Checkpoints and copy of the configuration file are saved in ckpt directory by default.
 You can change the path by adding --checkpoint_path option.
-
-Validation loss during training with V1 generator.
-<img src='' alt='validation loss' style='max-width:100%;'>
 
 ##Pre-tarined Model
 You can simply use pretrained models we provide.
