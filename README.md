@@ -1,5 +1,5 @@
 # Fre-GAN: Adversarial Frequency-consistent Audio Synthesis
-### Ji-Hoon Kim, Sang-Hoon Lee, Ji-Hyun Lee, Seoung-Whan Lee
+### Ji-Hoon Kim, Sang-Hoon Lee, Ji-Hyun Lee, Seong-Whan Lee
 
 In our recent paper, we propose Fre-GAN: a GAN-based neural vocoder that is able to generated high-quality speech from mel-spectrogram.
 We provide the official implementation of Fre-GAN and pretrained network parameters in this repository.
