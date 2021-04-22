@@ -9,6 +9,33 @@ We provide the official implementation of Fre-GAN and pretrained network paramet
 Visit our [demo page](http://prml-lab-speech-team.github.io/demo/FreGAN) for audio samples.
 
 ## Requirements
-1. Clone this respository
-> git clone
-3. Install python requirememts.
+<ol>
+<li>Clone this respository
+<pre>
+<code>git clone https://github.com/lism13/Fre-GAN.git</code>
+</pre>
+<li>Install python requirememts.
+<pre>
+<code>pip3 install -r requirements.txt</code>
+</pre>
+  <li>Download and extract the <a href='https://keithito.com/LJ-Speech-Dataset/'>LJSpeech </a> dataset. And move all wave filese to LJSpeech-1.1/wavs
+</ol>
+
+## Training
+<pre>
+<code> python train.py --config config_v1.json</code>
+</pre>
+
+To train V2 Generator, replace config_v1.json with config_v2.json.
+Checkpoints and copy of the configuration file are saved in ckpt directory by default.
+You can change the path by adding --checkpoint_path option.
+
+Validation loss during training with V1 generator.
+<img src='' alt='validation loss' style='max-width:100%;'>
+
+##Pre-tarined Model
+You can simply use pretrained models we provide.
+[Download pretrained model]('')
+
+## Acknowledgements
+We referred to [WaveGlow](https://github.com/descriptinc/melgan-neurips), [HiFi-GAN](https://github.com/jik876/hifi-gan) and [Tacotron2](https://github.com/NVIDIA/tacotron2) to implement this.
