@@ -21,11 +21,6 @@ Visit our [demo page](http://prml-lab-speech-team.github.io/demo/FreGAN) for aud
   <li>Download and extract the <a href='https://keithito.com/LJ-Speech-Dataset/'>LJSpeech </a> dataset. And move all wave filese to LJSpeech-1.1/wavs
 </ol>
 
-## Preprocess
-<pre>
-<code> python preprocess.py --in_dir='LJSpeech/wavs' --out_dir='LJSpeech/preprocessed'</code>
-</pre>
-
 ## Training
 <pre>
 <code> python train.py --config config_v1.json</code>
