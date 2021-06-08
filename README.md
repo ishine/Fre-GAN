@@ -26,10 +26,6 @@ Visit our [demo page](http://prml-lab-speech-team.github.io/demo/FreGAN) for aud
 <code> python train.py --config config_v1.json</code>
 </pre>
 
-To train V2 Generator, replace config_v1.json with config_v2.json.
-Checkpoints and copy of the configuration file are saved in ckpt directory by default.
-You can change the path by adding --checkpoint_path option.
-
 ## Pre-tarined Model
 You can simply use pretrained models we provide.
 [Download pretrained model]('')
